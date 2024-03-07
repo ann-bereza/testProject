@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "testproject"
+version = "0.1.0"
+description = ""
+authors = ["ann-bereza <annhavelia@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5.0.3"
+djangorestframework = "^3.14.0"
+pyyaml = "^6.0.1"
+uritemplate = "^4.1.1"
+drf-yasg = "^1.21.7"
+django-filter = "^23.5"
+djangorestframework-csv = "^3.0.2"
+django-rest-swagger = "^2.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,11 @@
+version: "3.10"
+
+services:
+  persons:
+    build: .
+    command: sh -c "python manage.py populate_database && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/app
+      - .db.sqlite3:/db.sqlite3
+    ports:
+      - "8000:8000"
